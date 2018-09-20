@@ -1,0 +1,38 @@
+<window>
+    <controls>
+        <control type="image">
+            <description>Screensaver Background Base</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1280</width>
+            <height>720</height>
+			<animation effect="fade" start="0" end="100" time="500">WindowOpen</animation>
+            <texture background="true">black.png</texture>
+        </control>
+        <control type="image">
+            <id>3000</id>
+            <description>Screensaver Background Image</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1280</width>
+            <height>720</height>
+			<fadetime>1000</fadetime>
+			<animation effect="fade" time="1000">VisibleChange</animation>
+            <texture background="true">$INFO[Window(Home).Property(plugin.video.embycon-random-gb)]</texture>
+        </control>
+		<control type="label">
+            <description>Label</description>
+            <id>3001</id>
+            <posx>0</posx>
+            <posy>300</posy>
+            <width>1280</width>
+            <height>720</height>
+            <textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<font>font45_title</font>
+            <label>$INFO[Window(Home).Property(plugin.video.embycon-random-gb-label)]</label>
+            <align>center</align>
+            <aligny>center</aligny>
+        </control>
+    </controls>
+</window>

@@ -1,0 +1,12 @@
+<addon id="screensaver.embycon" name="EmbyCon Screensaver" version="1.2.0" provider-name="Team B">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+	</requires>
+	<extension point="xbmc.ui.screensaver" library="default.py"/>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">EmbyCon Screensaver</summary>
+		<description lang="en">EmbyCon Screensaver</description>
+	</extension>
+</addon>
+	
