@@ -20,6 +20,29 @@
 			<animation effect="fade" time="1000">VisibleChange</animation>
             <texture background="true">$INFO[Window(Home).Property(plugin.video.embycon-random-gb)]</texture>
         </control>
+		
+		<control type="grouplist">
+			<left>0</left>
+			<top>650</top>
+			<width>1280</width>
+			<align>center</align>
+			<orientation>horizontal</orientation>
+			<control type="button">
+				<id>3001</id>
+				<width>auto</width>
+				<height>45</height>
+				<textcolor>white</textcolor>
+				<textoffsetx>20</textoffsetx>
+				<label>$INFO[Window(Home).Property(plugin.video.embycon-random-gb-label)]</label>
+				<font>font45_title</font>
+				<aligny>center</aligny>
+				<align>center</align>
+				<texturefocus colordiffuse="40FFFFFF">black.png</texturefocus>
+				<texturenofocus colordiffuse="40FFFFFF">black.png</texturenofocus>
+			</control>
+		</control>
+		
+		<!--
 		<control type="label">
             <description>Label</description>
             <id>3001</id>
@@ -34,5 +57,7 @@
             <align>center</align>
             <aligny>center</aligny>
         </control>
+		-->
+		
     </controls>
 </window>
