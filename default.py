@@ -34,8 +34,11 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         screen_saver_label = self.getControl(3001)
         screen_saver_label.setLabel("Closing...")
 
+        embycon_addon = xbmcaddon.Addon("plugin.video.embycon")
+        wait_on_select = embycon_addon.getSetting('changeUserOnScreenSaver') == 'true'
+
         loops = 0
-        while not xbmc.getCondVisibility("Window.IsVisible(selectdialog)") and loops < 20:
+        while wait_on_select and not xbmc.getCondVisibility("Window.IsVisible(selectdialog)") and loops < 20:
             loops = loops + 1
             xbmc.log("EmbyCon.Screensaver, waiting 500 ms for selectdialog : " + str(loops))
             xbmc.sleep(500)
